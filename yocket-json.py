@@ -3,7 +3,8 @@ import time
 import random
 import sys
 headers = {
-    'Authorization': 'Basic c2FtbXkuc21pdGg2NTQxMjNAZ21haWwuY29tOjVmMjgzN2MyNzAxYzExZTljMTRjYzlmNzhiNjFhOGY0OTVkNWE5YmM=',
+    #AUTH = get it from any portal
+    'Authorization': 'Basic AUTH',
     'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-G925F Build/KOT49H)',
     'Host': 'yocket.in',
 }
