@@ -3,7 +3,7 @@ import time
 import random
 import sys
 headers = {
-    #AUTH = get it from any portal
+    #AUTH = get it from any proxy portal for testing purpose
     'Authorization': 'Basic AUTH',
     'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-G925F Build/KOT49H)',
     'Host': 'yocket.in',
@@ -32,7 +32,9 @@ data = {
   'interested_course_group_id': '',
   'application_status': '0'
 }
-proxy = {'https': 'https://ncUdx7:FC0pYy@186.65.114.108:9794/'}
+
+#proxyData = get it from any proxy portal for testing purpose
+proxy = {'https': proxyData}
 with open('datajson.txt','a') as jp:
     for i in range(5146,6220):
         try:
