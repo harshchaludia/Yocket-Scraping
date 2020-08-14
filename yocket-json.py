@@ -5,8 +5,8 @@ import sys
 headers = {
     #AUTH = get it from any proxy portal for testing purpose
     'Authorization': 'Basic AUTH',
-    'User-Agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; SM-G925F Build/KOT49H)',
-    'Host': 'yocket.in',
+    'User-Agent': '<user-agent>',
+    'Host': '<website-name>',
 }
 
 params = (
@@ -38,7 +38,7 @@ proxy = {'https': proxyData}
 with open('datajson.txt','a') as jp:
     for i in range(5146,6220):
         try:
-            response = requests.post('https://yocket.in/user-profiles/find/matching-profiles.json?page='+str(i),timeout=5, headers=headers,proxies=proxy, data=data)
+            response = requests.post('https://<website-name>/user-profiles/find/matching-profiles.json?page='+str(i),timeout=5, headers=headers,proxies=proxy, data=data)
             ptxt = response.text
             jp.write(ptxt+",")
             print(i)
